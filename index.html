@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css"> <!-- agregar hoja de estilos CSS  -->
+
+
+    <title>Bienvenido a MEMO-LAM!</title>
+</head>
+<body>
+    <h1 id="TituloPrincipal">Bienvenido a MEMO-LAM!</h1>
+
+    <button id="ComenzarButton">Comenzar</button>
+
+
+    
+    <!-- Este div contiene el campo de entrada de nombre y el botón para aceptar -->
+    <div id="Divuser" style="display: none;">
+    
+        <!-- Campo de entrada de texto donde el usuario ingresa su nombre -->
+        <h2>Ingresa tu nombre</h2>
+        
+        <input type="text" id="NombreInput" placeholder="Tu nombre">
+    
+        <!-- Botón para aceptar el nombre -->
+        <button id="AceptarButton">Aceptar</button>
+    
+    </div>
+
+
+    
+    <!-- Este div contiene el mensaje de bienvenida y estará oculto al principio -->
+    <div id="MensajeBienvenida" style="display: none;">
+    
+        <!-- Se mostrará el mensaje de bienvenida junto con el nombre del usuario -->
+        <h1 id="BienvenidaUsuario"></h1>
+    
+    </div>
+
+
+    
+    <!-- Div para elegir el nivel de juego -->
+    <div id="ElegirNivel" style="display: none;">
+    
+        <h2 id="Nivel">Elige tu nivel de juego</h2>
+    
+        <button id="PrincipianteButton">Principiante</button>
+    
+        <button id="MedioButton">Medio</button>
+    
+        <button id="ExpertoButton">Experto</button>
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="grilla" id="cuadricula" style="display: none;"> </div>
+
+
+    <div id="dorsoCarta" class="imagen-dorso">
+        <img src="multimedia/dorso.png">
+    </div>
+
+    <div id="Reloj" style="display: none;"></div>
+
+<!--
+    <div class="fila" id="fila1" style="display: none;">
+       
+        <div class="columna">
+            <img src="multimedia/brad y angelina/angelina.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/will smith y jada pinkett/jada pinkett.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/coti y cone gran hermano/cone.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/rusher y la china/china-suarez.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/dani y thiago gran hermano/thiago.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/de paul y tini/de paul.png">
+        </div>
+
+    </div>
+
+
+    <div class="fila" id="fila2" style="display: none;">
+       
+        <div class="columna">
+            <img src="multimedia/trueno y nicki nicole/nicki nicole.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/thimothee y kylie jenner/kylie.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/the weekend y selena gomez/selena gomez.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/shakira y pique/pique.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/de paul y tini/tini.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/raw y la rosalia/la rosalia.jpg">
+        </div>
+
+    </div>
+
+
+
+    <div class="fila" id="fila3" style="display: none;">
+       
+        <div class="columna">
+            <img src="multimedia/icardi y wanda/icardi.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/jack y rose/jack.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/johnny depp y amber/johnny depp.jpg">
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/justin y hailey/justinnn.png"> // confirmar si es png o jpg
+        </div>
+
+        <div class="columna">
+            <img src="multimedia/johnny depp y amber/amber.jpg">
+        </div>
+
+
+        
+
+
+
+
+
+
+
+        <div class="columna">
+            <img src="multimedia/brad y angelina/brad pitt.jpg">
+        </div>
+
+
+        <div class="fila"  id="fila4" style="display: none;">
+       
+            <div class="columna">
+                <img src="multimedia/dani y thiago gran hermano/dani.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/raw y la rosalia/raw.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/will smith y jada pinkett/will smith.png">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/the weekend y selena gomez/the weekend.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/coti y cone gran hermano/coti.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/marcos y julieta gran hermano/julieta.jpg">
+            </div>
+
+        </div>
+
+        
+
+        <div class="fila"  id="fila5" style="display: none;">
+       
+            <div class="columna">
+                <img src="multimedia/thimothee y kylie jenner/timothee.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/icardi y wanda/wanda.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/milei y bregman/bregman.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/kendall y bad bunny/bad bunny.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/shakira y pique/shakira.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/rusher y la china/rusher.jpg">
+            </div>
+
+        </div>
+
+
+
+        <div class="fila"  id="fila6" style="display: none;">
+       
+            <div class="columna">
+                <img src="multimedia/milei y bregman/milei.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/jack y rose/rose.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/marcos y julieta gran hermano/marcos.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/justin y hailey/hailey.png">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/trueno y nicki nicole/trueno.jpg">
+            </div>
+    
+            <div class="columna">
+                <img src="multimedia/kendall y bad bunny/kendall.jpg">
+            </div>
+
+        </div>
+
+    -->
+
+
+
+    </body>
+
+    <script src="js/js.js"></script>
+
+    </html>
