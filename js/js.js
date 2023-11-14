@@ -137,7 +137,7 @@ function voltearCarta() {
     
         if (cartasVolteadas === imagenes.length * imagenes[0].length) { //cuando quedan 0 cartas se muestra el alert
     
-          alert('¡Ganaste!');
+          alert('¡Ganasteeee!');
     
         }
     
