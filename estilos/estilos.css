@@ -1,191 +1,219 @@
        /* Estilos generales para centrar contenido y aplicar colores */
-       body {
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: #f5f5f5; /* Color de fondo */
-        font-family: 'Mulish', Arial, sans-serif; /* Tipografía */
-    }
-
-    #ComenzarButton {
-        background-color: #e74c3c; /* Color verde pastel */
-        color: rgb(255, 255, 255); /* Color del texto del botón */
-        border: none;
-        padding: 15px 30px; /* Mayor tamaño del botón */
-        border-radius: 20px; /* Mayor redondez */
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-        transition: background-color 0.3s; /* Transición de color al pasar el mouse */
-    }
-
-    #ComenzarButton:hover {
-        background-color: #d64737; /* Color de fondo del botón al pasar el mouse */
-    }
-
-    #ComenzarButton:active {
-        background-color: #b33a2d; /* Color de fondo del botón al hacer clic */
-    }
+body {
+    background-color: rgb(125, 0, 0); 
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Mulish', Arial, sans-serif; /* Tipografía */
+}
 
 
-    /* Estilos para el mensaje de bienvenida */
-    #MensajeBienvenida {/*elige tu nivel*/
-        display: none; /* Inicialmente oculto */
-        text-align: left; /* Texto a la izquierda */
-        background-color: transparent; /* Fondo transparente */
-        border: none; /* Sin borde */
-        margin-top: 5px;
-    }
+#BienvenidoA {
+    font-weight: light;
+    font-size: 25px;
+    text-align: center;
+}
 
-    #BienvenidaUsuario { 
-        font-size: 18px; /* Tamaño de fuente más pequeño */
-        color: black; /* Color de texto negro */
-        margin-top: 8px;
-        margin-bottom: 15px;
+#Memo-lam {
+    font-weight: bold;
+    font-size: 40px;
+}
 
-    }
+#ComenzarButton {
+    background-color: #000000; /* Color rojo claro */
+    color: rgb(255, 255, 255); /* Color del texto del botón */
+    border: none;
+    padding: 20px 35px; /* Mayor tamaño del botón */
+    border-radius: 20px; /* Mayor redondez */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    font-size: 25px;
+}
 
-    /* Estilos para el div de ingreso de nombre */
-    #Divuser {
-        text-align: center;
-        background-color: #e74c3c; /* Color de fondo */
-        padding: 20px;
-        border: 2px solid #ccc; /* Borde gris */
-        border-radius: 20px; /* Mayor redondez */
-        margin-top: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    }
+#ComenzarButton:hover {
+    background-color: rgb(54, 6, 0); /* Color de fondo del botón al pasar el mouse */
+}
 
-    h2 {
-        font-size: 20px;
-        color: rgb(255, 255, 255); /* Color del título */
-    }
+#ComenzarButton:active {
+    background-color: #1f0300; /* Color de fondo del botón al hacer clic */
+}
 
-    input {
-        font-size: 16px;
-        padding: 10px;
-        border: none;
-        border-radius: 20px; /* Mayor redondez */
-        margin: 10px 0;
-        background-color: #eee; /* Relleno gris claro */
-    }
+button:hover{/* cursor */
+    cursor: pointer;
+}
+/* Estilos para el mensaje de bienvenida */
+#MensajeBienvenida {/* elige tu nivel */
+    display: none; /* Inicialmente oculto */
+    text-align: left; /* Texto a la izquierda */
+    border: none; /* Sin borde */
+    margin-top: 5px;
+}
 
-    #AceptarButton {
-        background-color: #c7ea46; /* Color verde pastel */
-        color: rgb(74, 74, 74); /* Color del texto del botón */
-        border: none;
-        padding: 15px 30px; /* Mayor tamaño del botón */
-        border-radius: 20px; /* Mayor redondez */
-        cursor: pointer;
-        transition: background-color 0.3s; /* Transición de color al pasar el mouse */
-    }
+#BienvenidaUsuario { 
+    font-size: 30px; /* Tamaño de fuente */
+    color: rgb(241, 199, 199); /* Color de texto */
+    margin-top: 70px;
+    font-size: 25px;
+}
 
-    #AceptarButton:hover {
-        background-color: #a6d834; /* Color de fondo del botón al pasar el mouse */
-    }
+/* Estilos para el div de ingreso de nombre */
+#Divuser {
+    text-align: center;
+    background-color: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 20px;
+    border: 3px solid #000000; /* Borde blanco */
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
 
-    #AceptarButton:active {
-        background-color: #89c01f; /* Color de fondo del botón al hacer clic */
-    }
+#Nombre {
+    text-shadow: 2px 3px 4px rgb(0, 0, 0, 0.3);
+}
 
-    #Nivel {
-        color:rgba(0, 0, 0, 1);
-        text-align: center;
-    }
+h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255); /* Color del título blanco */
+}
 
-    #PrincipianteButton {
-        background-color: #e74c3c; /* Color verde pastel */
-        color: rgb(255, 255, 255); /* Color del texto del botón */
-        border: none;
-        padding: 15px 30px; /* Mayor tamaño del botón */
-        border-radius: 20px; /* Mayor redondez */
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-        transition: background-color 0.3s; /* Transición de color al pasar el mouse */
-    }
+input {
+    font-size: 20px;
+    padding: 15px 30px;
+    border: 3px;
+    border-color: #000000;
+    border-radius: 20px; /* Mayor redondez */
+    color: rgb(34, 34, 34);
+    background-color: #ffffffe5; /* Relleno */
+}
 
-    #PrincipianteButton:hover {
-        background-color: #d64737; /* Color de fondo del botón al pasar el mouse */
-    }
+#AceptarButton {
+    background-color: #ef3232; /* Color rojo */
+    color: rgb(255, 255, 255); /* Color del texto del botón */
+    border: none;
+    padding: 10px 30px; /* Mayor tamaño del botón */
+    border-radius: 20px; /* Mayor redondez */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    font-size: 25px;
+}
 
-    #PrincipianteButton:active {
-        background-color: #b33a2d; /* Color de fondo del botón al hacer clic */
-    }
+#AceptarButton:hover {
+    background-color: #d32c2c; /* Color de fondo del botón al pasar el mouse */
+    color: rgb(255, 255, 255); /* Color del texto del botón */
+}
 
-    #MedioButton {
-        background-color: #e74c3c; /* Color verde pastel */
-        color: rgb(255, 255, 255); /* Color del texto del botón */
-        border: none;
-        padding: 15px 30px; /* Mayor tamaño del botón */
-        border-radius: 20px; /* Mayor redondez */
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-        transition: background-color 0.3s; /* Transición de color al pasar el mouse */
-    }
+#AceptarButton:active {
+    background-color: #a82323; /* Color de fondo del botón al hacer clic */
+    color: rgb(255, 255, 255); /* Color del texto del botón */
+}
 
-    #MedioButton:hover {
-        background-color: #d64737; /* Color de fondo del botón al pasar el mouse */
-    }
+#ElegirNivel {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+}
 
-    #MedioButton:active {
-        background-color: #b33a2d; /* Color de fondo del botón al hacer clic */
-    }
+#PrincipianteButton {
+    background-color: #ffe100; /* Color amarillo */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    padding: 15px 30px; /* Mayor tamaño del botón */
+    border-radius: 20px; /* Mayor redondez */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    font-size: 25px;
+        border: 3px;
+    border-color: #000000;
+}
 
-    #ExpertoButton {
-        background-color: #e74c3c; /* Color verde pastel */
-        color: rgb(255, 255, 255); /* Color del texto del botón */
-        border: none;
-        padding: 15px 30px; /* Mayor tamaño del botón */
-        border-radius: 20px; /* Mayor redondez */
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
-        transition: background-color 0.3s; /* Transición de color al pasar el mouse */
-    }
+#PrincipianteButton:hover {
+    background-color: #d6b937; /* Color de fondo del botón al pasar el mouse */
+}
 
-    #ExpertoButton:hover {
-        background-color: #d64737; /* Color de fondo del botón al pasar el mouse */
-    }
+#PrincipianteButton:active {
+    background-color: #b3a12d; /* Color de fondo del botón al hacer clic */
+}
 
-    #ExpertoButton:active {
-        background-color: #b33a2d; /* Color de fondo del botón al hacer clic */
-    }
+#MedioButton {
+    background-color: #e7863c; /* Color marroncito */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    border: none;
+    padding: 15px 30px; /* Mayor tamaño del botón */
+    border-radius: 20px; /* Mayor redondez */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    font-size: 25px;
+}
 
-    .grilla {
-      display: grid;
-      grid-template-columns: repeat(6, 1fr); /* 6 columnas iguales. 
-                                                1fr significa "fracción de espacio disponible". 
-                                                Cada columna ocupará una fracción igual del espacio disponible en el contenedor de la cuadrícula. */
-      
-      gap: 15px; /* Espacio entre las imágenes */
-    }
+#MedioButton:hover {
+    background-color: #d06908; /* Color de fondo del botón al pasar el mouse */
+}
 
-    .imagen-dorso {
-        position: absolute;
-        top: 1;
-        display: none; /* Invisible al principio */
-        z-index: 2; /* z-index superior */
-        max-width: 70px;
-        max-height: 70px; 
-        width: auto;
-        height: auto;
-    }
-    
-    /* tamaño máximo para las imágenes en las filas y columnas */
-    .fila img, .columna img {
-        max-width: 70px; 
-        max-height: 70px; 
-        margin-bottom: 10px;
-        width: auto;
-        height: auto;
-        z-index: 1; /* Z-index inferior al de la imagen-dorso */
-    }
+#MedioButton:active {
+    background-color: #ff7b00; /* Color de fondo del botón al hacer clic */
+}
+
+#ExpertoButton {
+    background-color: #ff1900; /* Color rojo */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    border: none;
+    padding: 15px 30px; /* Mayor tamaño del botón */
+    border-radius: 20px; /* Mayor redondez */
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: background-color 0.3s; /* Transición de color al pasar el mouse */
+    font-size: 25px;
+}
+
+#ExpertoButton:hover {
+    background-color: #c51400; /* Color de fondo del botón al pasar el mouse */
+}
+
+#ExpertoButton:active {
+    background-color: #7b0c00; /* Color de fondo del botón al hacer clic */
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 columnas iguales. 
+                                            1fr significa "fracción de espacio disponible". 
+                                            Cada columna ocupará una fracción igual del espacio disponible en el contenedor de la cuadrícula. */
   
+  gap: 10px; /* Espacio entre las imágenes */
+}
 
+.imagen-dorso {
+    position: absolute;
+    top: 1;
+    display: none; /* Invisible al principio */
+    z-index: 2; /* z-index superior */
+    max-width: 65px;
+    max-height: 65px; 
+    width: auto;
+    height: auto;
+}
 
+/* tamaño máximo para las imágenes en las filas y columnas */
+.fila img, .columna img {
+    max-width: 60px; 
+    max-height: 60px; 
+    width: auto;
+    height: auto;
+    z-index: 1; /* Z-index inferior al de la imagen-dorso */
+}
 
+#puntaje {
+    display: none;
+    padding: 5px;
+}
 
-  
-  
+#Reloj {
+    margin-top: 5px;
+}
   
