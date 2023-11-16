@@ -1,6 +1,3 @@
-# saracatunga
-Final programacion (videogame) MEMO LAM
-
 Trabajo Práctico Final Número 4
 Programación multimedial
 
@@ -9,8 +6,8 @@ Desarrollo de un videojuego
 Estudiantes
 Agustina Ferraro
 Santiago Caceres
-Brisa
-Ramona
+Brisa Rodriguez
+Ramona Ikonicoff
 Docente
 Belén López del Monte
 Apertura del Trabajo
@@ -27,7 +24,7 @@ Año
 2. Consigna..……...……………...………………………………………………..………………….…. 4
 3. Información sobre el trabajo……………………………………………….………………………... 5
 4. Roles de cada integrante…….……..……………………….…..…...………………………………7
-5. Materiales utilizados...…...…………..……………………….…..…...….…………………………. 9
+5. Materiales utilizados...…...…………..……………………….…..…...….…………………………. 8
 
 
 
@@ -158,46 +155,29 @@ El juego termina cuando se encuentran todas las parejas o se agota el tiempo.
 Roles de cada integrante
 Agustina Ferraro
 Creación de las cartas.
-Creación del repositorio.
-Creación del documento en Drive.
 Desarrollo del prototipo en Figma.
-Creación del documento del trabajo.
 Desarrollo del documento del trabajo
-Desarrollo del código (Mensaje de bienvenida al juego con la posibilidad de comenzar por medio de un botón. Input para ingresar el usuario y un botón para aceptar el nombre. Decisión del nivel de dificultad. Creación de los arrays para las cartas llamados ¨imagenes¨ y ¨pares¨. Creación de las variables ¨cartasVolteadas¨, ¨primeraCarta¨, ¨segundaCarta¨ y ¨bloqueo¨. Creación de las funciones ¨sonCartasIguales(carta1, carta2)¨ con su variable ¨par¨, ¨ocultarCarta(carta)¨, ¨voltearCarta()¨ con su variable ¨carta¨, ¨asignarEventosACartas()¨ con su variable ¨cartas¨, ¨crearGrilla()¨ con sus variables ¨cuadricula¨, ¨fila¨ y ¨dorso¨para acomodar la grilla creada con bucles, ¨mostrarTiempoRestante(tiempo)¨ con sus variables ¨reloj¨, ¨minutos¨, ¨segundos¨, ¨minutosFormateados¨, ¨segundosFormateados¨ para crear temporizadores en cada nivel, funciones anónimas ¨onclick¨ con sus variables ¨nombre¨, ¨tiempoRestante¨. Cada función tiene su lógica desarrollada para que el juego funcione).
+Desarrollo del código JS
+Desarrollo del html
 Orden de las cartas.
 Encargada de brindar el material utilizado.
 Desarrollo del Css
+Desarrollo de la presentación
 
 Santiago Cáceres
-Encargado de brindar referencia de juegos.
-Desarrollo del prototipo en Figma.
-Creación de la presentación
+Encargado de brindar referencia de juegos
+Desarrollo del prototipo en Figma
 Desarrollo de la presentación
 Desarrollo del Css
 
-Brisa
-Creación del documento en Figma.
+Brisa Rodriguez
 Encargada de brindar referencias de juegos.
 Desarrollo del Css
 
-Ramona
-Creación de las cartas.
-Orden de las cartas.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Ramona Ikonicoff
+Creación de las cartas
+Orden de las cartas
+Desarrollo del Css
 
 Materiales utilizados
 Los materiales utilizados para realizar este trabajo fueron los siguientes:
